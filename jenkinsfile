@@ -6,9 +6,12 @@ library identifier: 'custom-lib@main', retriever: modernSCM(
 pipeline{
         agent any
         stages{
-            stage("Example"){
+            stage("Example_1"){
                 steps{                   
                     helloWorld(dayOfWeek:"Monday",name:"OVLN Prasad")
+                }
+            stage("Example_2"){
+                steps{                  
                     createFolders()    
                 }
                 
