@@ -9,7 +9,7 @@ pipeline{
             stage("Example"){
                 steps{                   
                     helloWorld(dayOfWeek:"Monday",name:"OVLN Prasad")
-    
+                    createFolders()    
                 }
                 
             }
