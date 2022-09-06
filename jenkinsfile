@@ -19,12 +19,6 @@ pipeline{
                 helloWorld(dayOfWeek:"Monday",name:"OVLN Prasad")
                 sh 'printenv'
               }
-            }
-            stage("Example_2"){
-                steps{
-                    createFolders()    
-                }
-             }
-            
+            }                     
         }
 }
