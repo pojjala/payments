@@ -7,13 +7,14 @@ pipeline{
         agent any
         stages{
             stage("Example_1"){
-                steps{                   
+                steps{ 
                     helloWorld(dayOfWeek:"Monday",name:"OVLN Prasad")
                 }
             }
             stage("Example_2"){
-                steps{                  
-                    createFolders()    
+                steps{
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+      //              createFolders()    
                 }
              }
             
