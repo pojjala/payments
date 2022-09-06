@@ -5,11 +5,19 @@ library identifier: 'custom-lib@main', retriever: modernSCM(
    
 pipeline{
         agent any
+        
+        environment { 
+          CC = 'clang'
+        }
         stages{
             stage("Example_1"){
-                steps{ 
-                    helloWorld(dayOfWeek:"Monday",name:"OVLN Prasad")
-                }
+              environment { 
+                DEBUG_FLAGS = '-g'
+              }
+              steps{ 
+                helloWorld(dayOfWeek:"Monday",name:"OVLN Prasad")
+                sh 'printenv'
+              }
             }
             stage("Example_2"){
                 steps{
