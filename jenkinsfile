@@ -8,7 +8,7 @@ pipeline{
         
         environment { 
           CC = 'clang'
-          BITBUCKET_COMMON_CREDS = credentials('GitHub')
+          BITBUCKET_COMMON_CREDS_PRASAD = credentials('GitHub')
         }
         stages{
             stage("Example_1"){
