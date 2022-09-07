@@ -2,9 +2,6 @@ library identifier: 'custom-lib@main', retriever: modernSCM(
   [$class: 'GitSCMSource',
    remote: 'https://github.com/pojjala/aci.git'])
    
-createFolders{
-SERVICE_BUILD_PATH = ""
-SERVICE_HELP_CHART_PATH = ""
-BITBUCKET_PROJECT_URL =  ""
-LINUX_WORKER = ""
+monorepoSeed{
+  GIT_URL = "https://github.com/pojjala/payments.git"
 }
