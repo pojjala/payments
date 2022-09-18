@@ -3,5 +3,6 @@ library identifier: 'custom-lib@main', retriever: modernSCM(
    remote: 'https://github.com/pojjala/aci.git'])
    
 createFolder{
+  def PROJECT_NAME = "ABC"
   GIT_URL = "https://github.com/pojjala/payments.git"
 }
