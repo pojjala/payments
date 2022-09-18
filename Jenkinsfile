@@ -7,6 +7,7 @@
    
 createFolder{
   def PROJECT_NAME = "ABC"
-  GIT_URL = "https://github.com/pojjala/aci.git"
+   echo " In Payment repository : create foler call  "
+//   GIT_URL = "https://github.com/pojjala/aci.git"
 //   GIT_URL = "https://github.com/pojjala/payments.git"
 }
